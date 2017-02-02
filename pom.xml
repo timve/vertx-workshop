@@ -14,7 +14,7 @@
     </modules>
 
 
-    <name>Vert.x 3 examples : Hello world</name>
+    <name>Vert.x workshop</name>
 
     <properties>
         <vertx.version>3.3.3</vertx.version>
