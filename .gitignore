@@ -1,0 +1,6 @@
+.idea/
+*.iws
+target/
+.mvn/
+
+hs_err_pid*
