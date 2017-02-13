@@ -2,5 +2,5 @@
 *.iws
 target/
 .mvn/
-
+*.iml
 hs_err_pid*
