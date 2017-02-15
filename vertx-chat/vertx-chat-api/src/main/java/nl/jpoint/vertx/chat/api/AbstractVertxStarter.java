@@ -19,7 +19,7 @@ import static java.util.stream.StreamSupport.stream;
 public class AbstractVertxStarter {
 
     private static Logger LOG = LoggerFactory.getLogger(AbstractVertxStarter.class);
-    public static final String IP_PREFIX = "192.168.2";
+    public static final String IP_PREFIX = "192.168.1";
 
     /**
      * Deploys the given verticle in the clustered environment.
