@@ -6,12 +6,12 @@
         <script type="text/javascript">
             var messages = [];
 
-            var eventBus = new EventBus("http://localhost:8080/eventbus");
+            var eventBus = new EventBus('http://localhost:8080/eventbus');
             eventBus.onopen = function () {
                 // subscribe on eventbus topic 'general'
-                eventBus.registerHandler("general", function (err, msg) {
+                eventBus.registerHandler('general', function (err, msg) {
                     // message received on eventbus topic 'general'
-                    var elem = document.getElementById("messages");
+                    var elem = document.getElementById('messages');
                     var nickname = msg.headers ? msg.headers.handle : 'unknown';
                     elem.innerText = elem.innerText + '\n' + ' <' + nickname + '> ' + msg.body;
                 });
