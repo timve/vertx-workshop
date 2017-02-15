@@ -3,21 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>vertx-workshop</artifactId>
-        <groupId>nl.jpoint</groupId>
+        <artifactId>vertx-chat</artifactId>
+        <groupId>nl.jpoint.vertx-workshop</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>nl.jpoint.vertx-workshop</groupId>
-    <artifactId>vertx-chat</artifactId>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>vertx-chat-api</module>
-        <module>vertx-chat-common</module>
-        <module>vertx-chat-web</module>
-    </modules>
-
+    <groupId>nl.jpoint.vertx-workshop.vertx-chat</groupId>
+    <artifactId>vertx-chat-api</artifactId>
 
 </project>

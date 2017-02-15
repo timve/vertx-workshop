@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script src="http://cdn.jsdelivr.net/sockjs/0.3.4/sockjs.min.js"></script>
+        <script src="./vertx-eventbus.js"></script>
+
+        <script type="text/javascript">
+            var messages = [];
+
+            var eventBus = new EventBus("http://localhost:8080/eventbus");
+            eventBus.onopen = function () {
+                // subscribe on eventbus topic 'general'
+                eventBus.registerHandler("general", function (err, msg) {
+                    // message received on eventbus topic 'general'
+                    var elem = document.getElementById("messages");
+                    elem.innerText = elem.innerText + '\n' + ' <' + msg.headers.handle + '> ' + msg.body;
+                });
+
+                // TODO: add functionality to send chat messages
+            };
+        </script>
+    </head>
+
+    <body>
+        <h1>Vert.x chat</h1>
+        <pre id="messages"></pre>
+    </body>
+
+</html>
