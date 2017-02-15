@@ -12,7 +12,8 @@
                 eventBus.registerHandler("general", function (err, msg) {
                     // message received on eventbus topic 'general'
                     var elem = document.getElementById("messages");
-                    elem.innerText = elem.innerText + '\n' + ' <' + msg.headers.handle + '> ' + msg.body;
+                    var nickname = msg.headers ? msg.headers.handle : 'unknown';
+                    elem.innerText = elem.innerText + '\n' + ' <' + nickname + '> ' + msg.body;
                 });
 
                 // TODO: add functionality to send chat messages
