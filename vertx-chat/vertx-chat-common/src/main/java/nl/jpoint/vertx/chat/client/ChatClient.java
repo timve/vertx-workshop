@@ -27,7 +27,6 @@ public class ChatClient extends AbstractChatClient {
 
     @Override
     public void start() throws Exception {
-        // TODO: Retrieve key from shared data and store it in instance variable 'token'
     }
 
     /**

@@ -12,8 +12,9 @@ public class WebChatClient extends ChatClient {
     public void start() throws Exception {
         super.start();
 
-        // TODO: start sending some chat messages to the chat endpoint
-        // Hint: look at the helper methods in the super class
+        // TODO: Retrieve key from shared data and store it in instance variable 'token' (inherited from the super class)
+
+        // TODO: start sending some chat messages to the chat endpoint. Hint: look at the helper methods in the super class
     }
 }
 
